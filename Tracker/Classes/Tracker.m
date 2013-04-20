@@ -71,22 +71,4 @@ static BOOL gpsRunning;
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 
-/*
-- (void)echo:(CDVInvokedUrlCommand*)command{
-    CDVPluginResult* pluginResult = nil;
-    NSString* echo = [command.arguments objectAtIndex:0];
-    
-    if (echo != nil && [echo length] > 0) {
-        if([CLLocationManager locationServicesEnabled]){
-            [self.locationManager startUpdatingLocation];
-            gpsRunning = YES;
-        }
-        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:echo];
-    } else {
-        pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_ERROR];
-    }
-    
-    [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
-}
-*/
 @end
