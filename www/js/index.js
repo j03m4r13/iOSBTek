@@ -27,6 +27,13 @@ var app = {
     // 'load', 'deviceready', 'offline', and 'online'.
     bindEvents: function() {
         document.addEventListener('deviceready', this.onDeviceReady, false);
+        document.addEventListener('pause', this.onPause, false);
+    },
+    onPause: function(){
+        window.enterBackground("Joe", function(retValue) {
+                     
+                     });
+  
     },
     // deviceready Event Handler
     //
@@ -50,6 +57,12 @@ var app = {
                          callback('Error ID here.');
                          }, "Tracker", "start", [str]);
         };
+        window.enterBackground = function(str, callback) {
+            cordova.exec(callback, function(err) {
+                         callback('Error ID here.');
+                         }, "Tracker", "pause", [str]);
+        };
+
         window.start("Joe", function(retValue) {
                     
                     });

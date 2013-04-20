@@ -3,7 +3,7 @@
 //  Tracker
 //
 //  Created by Joemarie Aliling on 4/19/13.
-//
+//  
 //
 
 #import "Tracker.h"
@@ -69,6 +69,28 @@ static BOOL gpsRunning;
         pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"Good"];
     
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+}
+
+
+
+/**
+ *  Background handler.. This gets called by Phonegap when app is put into background..
+ */
+
+//TODO: error handler
+- (void)pause:(CDVInvokedUrlCommand*)command{
+    [self.commandDelegate runInBackground:^{
+            CDVPluginResult* pluginResult = nil;
+
+            if([CLLocationManager locationServicesEnabled]){
+                NSLog(@"Running Location Manager in Background..");
+                [self.locationManager startUpdatingLocation];
+                gpsRunning = YES;
+            }
+            pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:@"Good"];
+            
+            [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
+    }];
 }
 
 @end
