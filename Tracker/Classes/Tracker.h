@@ -7,11 +7,8 @@
 //  This is the iOS version of the BTekSensorAPI
 
 
-
-
 #import <Cordova/CDV.h>
 #import <CoreLocation/CoreLocation.h>
-
 
 @interface Tracker : CDVPlugin <CLLocationManagerDelegate>{
     
