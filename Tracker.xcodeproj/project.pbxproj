@@ -7,6 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		010E345617705A7B00B21C8C /* SensorSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 010E345517705A7B00B21C8C /* SensorSchedule.m */; };
+		010E34591770607500B21C8C /* Profile.m in Sources */ = {isa = PBXBuildFile; fileRef = 010E34581770607500B21C8C /* Profile.m */; };
+		010E345C1770688C00B21C8C /* SensorProfileBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 010E345B1770688C00B21C8C /* SensorProfileBase.m */; };
+		0120655417A9236F009B9F67 /* logging_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 0120653C17A9236F009B9F67 /* logging_mosq.c */; };
+		0120655517A9236F009B9F67 /* memory_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 0120653E17A9236F009B9F67 /* memory_mosq.c */; };
+		0120655617A9236F009B9F67 /* messages_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 0120654017A9236F009B9F67 /* messages_mosq.c */; };
+		0120655717A9236F009B9F67 /* mosquitto.c in Sources */ = {isa = PBXBuildFile; fileRef = 0120654217A9236F009B9F67 /* mosquitto.c */; };
+		0120655817A9236F009B9F67 /* net_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 0120654617A9236F009B9F67 /* net_mosq.c */; };
+		0120655917A9236F009B9F67 /* read_handle.c in Sources */ = {isa = PBXBuildFile; fileRef = 0120654817A9236F009B9F67 /* read_handle.c */; };
+		0120655A17A9236F009B9F67 /* read_handle_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 0120654A17A9236F009B9F67 /* read_handle_client.c */; };
+		0120655B17A9236F009B9F67 /* read_handle_shared.c in Sources */ = {isa = PBXBuildFile; fileRef = 0120654B17A9236F009B9F67 /* read_handle_shared.c */; };
+		0120655C17A9236F009B9F67 /* send_client_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 0120654C17A9236F009B9F67 /* send_client_mosq.c */; };
+		0120655D17A9236F009B9F67 /* send_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 0120654D17A9236F009B9F67 /* send_mosq.c */; };
+		0120655E17A9236F009B9F67 /* thread_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 0120654F17A9236F009B9F67 /* thread_mosq.c */; };
+		0120655F17A9236F009B9F67 /* util_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 0120655017A9236F009B9F67 /* util_mosq.c */; };
+		0120656017A9236F009B9F67 /* will_mosq.c in Sources */ = {isa = PBXBuildFile; fileRef = 0120655217A9236F009B9F67 /* will_mosq.c */; };
+		0120656717A923A7009B9F67 /* MarquetteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0120656217A923A7009B9F67 /* MarquetteViewController.m */; };
+		0120656817A923A7009B9F67 /* MosquittoClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0120656417A923A7009B9F67 /* MosquittoClient.m */; };
+		0120656917A923A7009B9F67 /* MosquittoMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0120656617A923A7009B9F67 /* MosquittoMessage.m */; };
+		0120656C17AFD7BC009B9F67 /* SensorHandlerBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0120656B17AFD7BC009B9F67 /* SensorHandlerBase.m */; };
+		0120656F17AFDC96009B9F67 /* GpsMQTTHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 0120656E17AFDC95009B9F67 /* GpsMQTTHandler.m */; };
+		0120657217AFE793009B9F67 /* GpsSensorProfile.m in Sources */ = {isa = PBXBuildFile; fileRef = 0120657117AFE792009B9F67 /* GpsSensorProfile.m */; };
+		0120657517B01665009B9F67 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 0120657417B01664009B9F67 /* Reachability.m */; };
 		01AD86CB17215C1200C64313 /* Tracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 01AD86CA17215C1200C64313 /* Tracker.m */; };
 		1D3623260D0F684500981E51 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AppDelegate.m */; };
 		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
@@ -65,6 +88,52 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		010E345417705A7B00B21C8C /* SensorSchedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SensorSchedule.h; sourceTree = "<group>"; };
+		010E345517705A7B00B21C8C /* SensorSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SensorSchedule.m; sourceTree = "<group>"; };
+		010E34571770607500B21C8C /* Profile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Profile.h; sourceTree = "<group>"; };
+		010E34581770607500B21C8C /* Profile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Profile.m; sourceTree = "<group>"; };
+		010E345A1770688B00B21C8C /* SensorProfileBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SensorProfileBase.h; sourceTree = "<group>"; };
+		010E345B1770688C00B21C8C /* SensorProfileBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SensorProfileBase.m; sourceTree = "<group>"; };
+		0120653A17A9236F009B9F67 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		0120653B17A9236F009B9F67 /* dummypthread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = dummypthread.h; sourceTree = "<group>"; };
+		0120653C17A9236F009B9F67 /* logging_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = logging_mosq.c; sourceTree = "<group>"; };
+		0120653D17A9236F009B9F67 /* logging_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = logging_mosq.h; sourceTree = "<group>"; };
+		0120653E17A9236F009B9F67 /* memory_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = memory_mosq.c; sourceTree = "<group>"; };
+		0120653F17A9236F009B9F67 /* memory_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = memory_mosq.h; sourceTree = "<group>"; };
+		0120654017A9236F009B9F67 /* messages_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = messages_mosq.c; sourceTree = "<group>"; };
+		0120654117A9236F009B9F67 /* messages_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = messages_mosq.h; sourceTree = "<group>"; };
+		0120654217A9236F009B9F67 /* mosquitto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mosquitto.c; sourceTree = "<group>"; };
+		0120654317A9236F009B9F67 /* mosquitto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mosquitto.h; sourceTree = "<group>"; };
+		0120654417A9236F009B9F67 /* mosquitto_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mosquitto_internal.h; sourceTree = "<group>"; };
+		0120654517A9236F009B9F67 /* mqtt3_protocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mqtt3_protocol.h; sourceTree = "<group>"; };
+		0120654617A9236F009B9F67 /* net_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = net_mosq.c; sourceTree = "<group>"; };
+		0120654717A9236F009B9F67 /* net_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = net_mosq.h; sourceTree = "<group>"; };
+		0120654817A9236F009B9F67 /* read_handle.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = read_handle.c; sourceTree = "<group>"; };
+		0120654917A9236F009B9F67 /* read_handle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = read_handle.h; sourceTree = "<group>"; };
+		0120654A17A9236F009B9F67 /* read_handle_client.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = read_handle_client.c; sourceTree = "<group>"; };
+		0120654B17A9236F009B9F67 /* read_handle_shared.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = read_handle_shared.c; sourceTree = "<group>"; };
+		0120654C17A9236F009B9F67 /* send_client_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = send_client_mosq.c; sourceTree = "<group>"; };
+		0120654D17A9236F009B9F67 /* send_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = send_mosq.c; sourceTree = "<group>"; };
+		0120654E17A9236F009B9F67 /* send_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = send_mosq.h; sourceTree = "<group>"; };
+		0120654F17A9236F009B9F67 /* thread_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = thread_mosq.c; sourceTree = "<group>"; };
+		0120655017A9236F009B9F67 /* util_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = util_mosq.c; sourceTree = "<group>"; };
+		0120655117A9236F009B9F67 /* util_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = util_mosq.h; sourceTree = "<group>"; };
+		0120655217A9236F009B9F67 /* will_mosq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = will_mosq.c; sourceTree = "<group>"; };
+		0120655317A9236F009B9F67 /* will_mosq.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = will_mosq.h; sourceTree = "<group>"; };
+		0120656117A923A7009B9F67 /* MarquetteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarquetteViewController.h; sourceTree = "<group>"; };
+		0120656217A923A7009B9F67 /* MarquetteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarquetteViewController.m; sourceTree = "<group>"; };
+		0120656317A923A7009B9F67 /* MosquittoClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MosquittoClient.h; path = ../Classes/MosquittoClient.h; sourceTree = "<group>"; };
+		0120656417A923A7009B9F67 /* MosquittoClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MosquittoClient.m; path = ../Classes/MosquittoClient.m; sourceTree = "<group>"; };
+		0120656517A923A7009B9F67 /* MosquittoMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MosquittoMessage.h; path = ../Classes/MosquittoMessage.h; sourceTree = "<group>"; };
+		0120656617A923A7009B9F67 /* MosquittoMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MosquittoMessage.m; path = ../Classes/MosquittoMessage.m; sourceTree = "<group>"; };
+		0120656A17AFD7BC009B9F67 /* SensorHandlerBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SensorHandlerBase.h; path = "marquette-master/SensorHandlerBase.h"; sourceTree = "<group>"; };
+		0120656B17AFD7BC009B9F67 /* SensorHandlerBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SensorHandlerBase.m; path = "marquette-master/SensorHandlerBase.m"; sourceTree = "<group>"; };
+		0120656D17AFDC95009B9F67 /* GpsMQTTHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GpsMQTTHandler.h; sourceTree = "<group>"; };
+		0120656E17AFDC95009B9F67 /* GpsMQTTHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GpsMQTTHandler.m; sourceTree = "<group>"; };
+		0120657017AFE792009B9F67 /* GpsSensorProfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GpsSensorProfile.h; sourceTree = "<group>"; };
+		0120657117AFE792009B9F67 /* GpsSensorProfile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GpsSensorProfile.m; sourceTree = "<group>"; };
+		0120657317B01664009B9F67 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		0120657417B01664009B9F67 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		01AD86C917215C1200C64313 /* Tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tracker.h; path = ../Classes/Tracker.h; sourceTree = "<group>"; };
 		01AD86CA17215C1200C64313 /* Tracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Tracker.m; path = ../Classes/Tracker.m; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -139,9 +208,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0120653917A9236F009B9F67 /* libmosquitto */ = {
+			isa = PBXGroup;
+			children = (
+				0120653A17A9236F009B9F67 /* config.h */,
+				0120653B17A9236F009B9F67 /* dummypthread.h */,
+				0120653C17A9236F009B9F67 /* logging_mosq.c */,
+				0120653D17A9236F009B9F67 /* logging_mosq.h */,
+				0120653E17A9236F009B9F67 /* memory_mosq.c */,
+				0120653F17A9236F009B9F67 /* memory_mosq.h */,
+				0120654017A9236F009B9F67 /* messages_mosq.c */,
+				0120654117A9236F009B9F67 /* messages_mosq.h */,
+				0120654217A9236F009B9F67 /* mosquitto.c */,
+				0120654317A9236F009B9F67 /* mosquitto.h */,
+				0120654417A9236F009B9F67 /* mosquitto_internal.h */,
+				0120654517A9236F009B9F67 /* mqtt3_protocol.h */,
+				0120654617A9236F009B9F67 /* net_mosq.c */,
+				0120654717A9236F009B9F67 /* net_mosq.h */,
+				0120654817A9236F009B9F67 /* read_handle.c */,
+				0120654917A9236F009B9F67 /* read_handle.h */,
+				0120654A17A9236F009B9F67 /* read_handle_client.c */,
+				0120654B17A9236F009B9F67 /* read_handle_shared.c */,
+				0120654C17A9236F009B9F67 /* send_client_mosq.c */,
+				0120654D17A9236F009B9F67 /* send_mosq.c */,
+				0120654E17A9236F009B9F67 /* send_mosq.h */,
+				0120654F17A9236F009B9F67 /* thread_mosq.c */,
+				0120655017A9236F009B9F67 /* util_mosq.c */,
+				0120655117A9236F009B9F67 /* util_mosq.h */,
+				0120655217A9236F009B9F67 /* will_mosq.c */,
+				0120655317A9236F009B9F67 /* will_mosq.h */,
+			);
+			name = libmosquitto;
+			path = Tracker/libmosquitto;
+			sourceTree = "<group>";
+		};
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0120656117A923A7009B9F67 /* MarquetteViewController.h */,
+				0120656217A923A7009B9F67 /* MarquetteViewController.m */,
 				302D95EE14D2391D003F00A1 /* MainViewController.h */,
 				302D95EF14D2391D003F00A1 /* MainViewController.m */,
 				302D95F014D2391D003F00A1 /* MainViewController.xib */,
@@ -179,6 +284,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				0120653917A9236F009B9F67 /* libmosquitto */,
 				F840E1F0165FE0F500CFE078 /* config.xml */,
 				301BF56E109A69640062928A /* www */,
 				301BF52D109A57CC0062928A /* CordovaLib.xcodeproj */,
@@ -251,8 +357,26 @@
 		307C750510C5A3420062BCA9 /* Plugins */ = {
 			isa = PBXGroup;
 			children = (
+				0120657317B01664009B9F67 /* Reachability.h */,
+				0120657417B01664009B9F67 /* Reachability.m */,
+				0120656317A923A7009B9F67 /* MosquittoClient.h */,
+				0120656417A923A7009B9F67 /* MosquittoClient.m */,
+				0120656517A923A7009B9F67 /* MosquittoMessage.h */,
+				0120656617A923A7009B9F67 /* MosquittoMessage.m */,
 				01AD86C917215C1200C64313 /* Tracker.h */,
 				01AD86CA17215C1200C64313 /* Tracker.m */,
+				010E34571770607500B21C8C /* Profile.h */,
+				010E34581770607500B21C8C /* Profile.m */,
+				010E345A1770688B00B21C8C /* SensorProfileBase.h */,
+				010E345B1770688C00B21C8C /* SensorProfileBase.m */,
+				0120656A17AFD7BC009B9F67 /* SensorHandlerBase.h */,
+				0120656D17AFDC95009B9F67 /* GpsMQTTHandler.h */,
+				0120656E17AFDC95009B9F67 /* GpsMQTTHandler.m */,
+				0120657017AFE792009B9F67 /* GpsSensorProfile.h */,
+				0120657117AFE792009B9F67 /* GpsSensorProfile.m */,
+				0120656B17AFD7BC009B9F67 /* SensorHandlerBase.m */,
+				010E345417705A7B00B21C8C /* SensorSchedule.h */,
+				010E345517705A7B00B21C8C /* SensorSchedule.m */,
 			);
 			name = Plugins;
 			path = Tracker/Plugins;
@@ -422,6 +546,29 @@
 				1D3623260D0F684500981E51 /* AppDelegate.m in Sources */,
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				01AD86CB17215C1200C64313 /* Tracker.m in Sources */,
+				010E345617705A7B00B21C8C /* SensorSchedule.m in Sources */,
+				010E34591770607500B21C8C /* Profile.m in Sources */,
+				010E345C1770688C00B21C8C /* SensorProfileBase.m in Sources */,
+				0120655417A9236F009B9F67 /* logging_mosq.c in Sources */,
+				0120655517A9236F009B9F67 /* memory_mosq.c in Sources */,
+				0120655617A9236F009B9F67 /* messages_mosq.c in Sources */,
+				0120655717A9236F009B9F67 /* mosquitto.c in Sources */,
+				0120655817A9236F009B9F67 /* net_mosq.c in Sources */,
+				0120655917A9236F009B9F67 /* read_handle.c in Sources */,
+				0120655A17A9236F009B9F67 /* read_handle_client.c in Sources */,
+				0120655B17A9236F009B9F67 /* read_handle_shared.c in Sources */,
+				0120655C17A9236F009B9F67 /* send_client_mosq.c in Sources */,
+				0120655D17A9236F009B9F67 /* send_mosq.c in Sources */,
+				0120655E17A9236F009B9F67 /* thread_mosq.c in Sources */,
+				0120655F17A9236F009B9F67 /* util_mosq.c in Sources */,
+				0120656017A9236F009B9F67 /* will_mosq.c in Sources */,
+				0120656717A923A7009B9F67 /* MarquetteViewController.m in Sources */,
+				0120656817A923A7009B9F67 /* MosquittoClient.m in Sources */,
+				0120656917A923A7009B9F67 /* MosquittoMessage.m in Sources */,
+				0120656C17AFD7BC009B9F67 /* SensorHandlerBase.m in Sources */,
+				0120656F17AFDC96009B9F67 /* GpsMQTTHandler.m in Sources */,
+				0120657217AFE793009B9F67 /* GpsSensorProfile.m in Sources */,
+				0120657517B01665009B9F67 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
