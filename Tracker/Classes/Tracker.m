@@ -1,13 +1,9 @@
-//
-//  Tracker.m
-//  Tracker
-//
-//  Created by Joemarie Aliling on 4/19/13.
-//  
-//
 
 #import "Tracker.h"
 #import <Cordova/CDV.h>
+
+#define MAXIMUM_AGE 15     //secs
+#define SLEEP_TIME   5     //secs
 
 @implementation Tracker
 @synthesize locationManager = _locationManager;
@@ -16,6 +12,8 @@ static BOOL gpsRunning;
 +(BOOL)isGPSRunning{
     return gpsRunning;
 }
+
+// the Cordova's init method
 -(void)pluginInitialize
 {
         if(self.locationManager == nil){
@@ -36,9 +34,8 @@ static BOOL gpsRunning;
     CLLocation* location = [locations lastObject];
     NSDate* eventDate = location.timestamp;
     NSTimeInterval howRecent = [eventDate timeIntervalSinceNow];
-    if (abs(howRecent) < 15.0) {
-        if(location.horizontalAccuracy < 35.0){
-            
+    if (abs(howRecent) < MAXIMUM_AGE) {
+        
             NSLog(@"Location Update: latitude %+.6f, longitude %+.6f, horacc, %.6f\n",
                   location.coordinate.latitude,
                   location.coordinate.longitude,
@@ -46,13 +43,13 @@ static BOOL gpsRunning;
             gpsRunning = NO;
             NSLog(@"Location updates stopped..\n");
             [manager stopUpdatingLocation];
-            [NSThread sleepForTimeInterval: 5]; // 60 secs rest 1 min
+            [NSThread sleepForTimeInterval: SLEEP_TIME]; // in secs
             NSLog(@"Location updates started..\n");
             [manager startUpdatingLocation];
-        }
         
     }
 }
+
 
 /**
  *  Starts the Location Manager

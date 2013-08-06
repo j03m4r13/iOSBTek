@@ -26,7 +26,7 @@
 //
 
 #import "MainViewController.h"
-
+#import "Reachability.h"
 @implementation MainViewController
 
 - (id)initWithNibName:(NSString*)nibNameOrNil bundle:(NSBundle*)nibBundleOrNil
@@ -74,8 +74,32 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    //Setup  PowerStateChangeReceiver
+    UIDevice *device = [UIDevice currentDevice];
+    device.batteryMonitoringEnabled = YES;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(powerStateChanged:) name:UIDeviceBatteryLevelDidChangeNotification object:device];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(powerStateChanged:) name:UIDeviceBatteryStateDidChangeNotification object:nil];
+    
+    // Observe the kNetworkReachabilityChangedNotification. When that notification is posted, the
+    // method "reachabilityChanged" will be called.
+    [[NSNotificationCenter defaultCenter] addObserver: self selector: @selector(networkStateChanged:) name: kReachabilityChangedNotification object: nil];
+
 }
+
+// implementation of power state change for IOS
+-(void)powerStateChanged:(NSNotification *)notification{
+    UIDevice *device = [UIDevice currentDevice];    
+    NSLog(@"State: %i Charge: %f", device.batteryState, device.batteryLevel);
+}
+
+// implementation of network state change for IOS
+- (void) networkStateChanged:(NSNotification *)notification{
+	Reachability* curReach = [notification object];
+	NSParameterAssert([curReach isKindOfClass: [Reachability class]]);
+}
+
+
 
 - (void)viewDidUnload
 {
