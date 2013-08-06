@@ -1,10 +1,3 @@
-//
-//  Tracker.m
-//  Tracker
-//
-//  Created by Joemarie Aliling on 4/19/13.
-//  
-//
 
 #import "Tracker.h"
 #import <Cordova/CDV.h>

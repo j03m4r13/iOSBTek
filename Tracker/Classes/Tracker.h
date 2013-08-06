@@ -2,7 +2,7 @@
 //  Tracker.h
 //  Tracker
 //
-//  Created by Joemarie Aliling on 4/19/13.
+//  Created by Joemarie Aliling 
 //
 //  This is the iOS version of the BTekSensorAPI
 

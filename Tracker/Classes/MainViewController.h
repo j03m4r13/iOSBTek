@@ -28,9 +28,15 @@
 #import <Cordova/CDVViewController.h>
 #import <Cordova/CDVCommandDelegateImpl.h>
 #import <Cordova/CDVCommandQueue.h>
+@class Reachability;
+@interface MainViewController : CDVViewController{
+    Reachability* hostReach;
+    Reachability* internetReach;
+    Reachability* wifiReach;
+}
 
-@interface MainViewController : CDVViewController
-
+-(void)powerStateChanged:(NSNotification *)notification;
+-(void)networkStateChanged:(NSNotification *)notification;
 @end
 
 @interface MainCommandDelegate : CDVCommandDelegateImpl
